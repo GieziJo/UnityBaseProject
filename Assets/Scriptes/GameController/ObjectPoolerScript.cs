@@ -1,4 +1,16 @@
-﻿using System.Collections;
+﻿// ===============================
+// Original author : J. Giezendanner
+// SPECIAL NOTES   : 
+// ===============================
+// Summary         : A simple object pooler with dictionaries
+// ===============================
+// Change History:
+// J.Giezendanner: 
+//==================================
+
+
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,16 +28,9 @@ public class PooledGameObject
 public class ObjectPoolerScript : MonoBehaviour {
 
 	public static ObjectPoolerScript op;
-
-//	public static objectPoolerScript current;
 	Dictionary<PooledGOType,List<GameObject>> pooledObjectsDic = new Dictionary<PooledGOType, List<GameObject>>();
 	Dictionary<PooledGOType,GameObject> objectPrefabDic = new Dictionary<PooledGOType, GameObject>();
 	public PooledGameObject[] pooledGOs;
-
-	// List<GameObject> pooledObjects;
-
-	// void Awake (){
-	// }
 
 	// Use this for initialization
 	void Awake () {

@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿// ===============================
+// Original author : J. Giezendanner
+// SPECIAL NOTES   : 
+// ===============================
+// Summary         : Plays a clip from animation
+// ===============================
+// Change History:
+// J.Giezendanner: 
+//==================================
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
